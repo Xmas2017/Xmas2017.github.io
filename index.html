@@ -3,6 +3,32 @@
 <link rel="shortcut icon" href="image/favicon.ico"/>
 <link rel="stylesheet" href="stylesheet.css">
 <title>Merry Christmas</title>
+<style>
+#wapper{  
+    position: relative;   /*重要！保证footer是相对于wapper位置绝对*/  
+    height: auto;          /* 保证页面能撑开浏览器高度时显示正常*/  
+    min-height: 100%  /* IE6不支持，IE6要单独配置*/  
+}  
+#footer{  
+   position: absolute;  bottom: 0; /* 关键 */  
+   left:900px; 
+   height: 60px;         /* footer的高度一定要是固定值*/  
+   font-size:0.5cm;
+    font-weight:bold;
+}  
+#footer1{  
+   position: absolute;  bottom: 0; /* 关键 */  
+   left:700px; 
+   height: 60px;         /* footer的高度一定要是固定值*/  
+   font-size:0.5cm;
+    font-weight:bold;
+}  
+#main-content{  
+   padding-bottom: 60px; /*重要！给footer预留的空间*/  
+}  
+
+
+</style>
 </head>
 
 <body background="image/background.jpg">
@@ -44,7 +70,19 @@
           </nav>
        
   </header>
-  
+
+
+<div id="wapper">  
+    <div id="footer">  
+	GROUP APPLE
+    </div>  
+	 <div id="footer1">  
+	<br>
+	709610222@qq.com&nbsp;
+	754790641@qq.com&nbsp;
+	1102149032@qq.com
+    </div>  
+</div>  
 
 
 </body>
