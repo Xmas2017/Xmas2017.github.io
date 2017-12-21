@@ -51,31 +51,31 @@ ddsmoothmenu.init({
     
 </head>
 <body id="home">
+
 <div id="templatemo_outer_wrapper">
 	<div id="templatemo_wrapper">
     
     	<div id="templatemo_header">
-        <div id="site_title">
-          <h1><font color="#FFFFFF">WELCOME GUYS   </font></h1></div>
+        <div id="site_title"><h1><font color="#FFFFFF">WELCOME GUYS</font></h1></div>
             <div id="templatemo_menu" class="ddsmoothmenu">
                 <ul>
                     <li><a href="index.html" class="selected"><span></span>Home</a></li>
                      <li><a href="GAME.html"><span></span>GAME</a></li>
-                    <li><a href=><span></span>About</a></li>
-                    <li><a href=><span></span>Contact</a></li>
+                    <li><a href="about.html"><span></span>About</a></li>
+                    <li><a href="contact.html"><span></span>Contact</a></li>
                 </ul>
                 <br style="clear: left" />
-            </div>
-            <span class="cleaner"><img src="images/logo.jpg"/></span> <!-- end of templatemo_menu -->
+            </div> <!-- end of templatemo_menu -->
             <div class="cleaner"></div>
             
 		</div> <!-- end of templatemo header -->
         
         <div id="intro_text"></div>
-        
+        <br><br>
         <div id="templatemo_middle">
-          <div id="SlideItMoo_outer">	
-              <div id="SlideItMoo_inner">			
+        	
+            <div id="SlideItMoo_outer">	
+                <div id="SlideItMoo_inner">			
                     <div id="SlideItMoo_items">
                         <div class="SlideItMoo_element">
                               
@@ -106,29 +106,35 @@ ddsmoothmenu.init({
 			</div>        
       	</div> <!-- end of templatemo_middle -->
         
-        <div id="templatemo_main">
-        
-          <div class="content_box">
-            <div class="col_allw300 fp_service_box">
-                <h3>Web Templates</h3>
-                <img src="images/tick-48px.png" alt="image" />
-                <p>Vivamus</p>
-              <a class="more" href="#">Detail</a>
-            </div>
-            <div class="col_allw300 fp_service_box">
-                <h3>Online Marketing</h3>
-                <img src="images/post-it-48px.png" alt="image" />
-                <p>Lorem</p>
-                <a class="more" href="#">Detail</a>
-            </div>
-            <div class="col_allw300 fp_service_box col_last">
-                <h3>Optimizations</h3>
-                <img src="images/rosette-48px.png" alt="image" />
-                <p>Curabitur</p>
-                <a class="more" href="#">Detail</a>
-            </div>
-            <div class="cleaner"></div>
-            </div>
+	
+		<div class="content_box">          
+            <div align="center" id="CountMsg" class="HotDate"> 
+					<span id="t_d">00day</span> 
+					<span id="t_h">00hour</span> 
+					<span id="t_m">00min</span> 
+					<span id="t_s">00sec</span> 
+			</div> 
+			<script type="text/javascript"> 
+				function getRTime()
+				{ 
+					var EndTime= new Date('2017/12/25 00:00:00'); 
+					var NowTime = new Date(); 
+					var t =EndTime.getTime() - NowTime.getTime(); 
+
+					var d=Math.floor(t/1000/60/60/24); 
+					var h=Math.floor(t/1000/60/60%24); 
+					var m=Math.floor(t/1000/60%60); 
+					var s=Math.floor(t/1000%60); 
+	 
+					document.getElementById("t_d").innerHTML = d + "day"; 
+					document.getElementById("t_h").innerHTML = h + "hour"; 
+					document.getElementById("t_m").innerHTML = m + "min"; 
+					document.getElementById("t_s").innerHTML = s + "sec"; 
+				} 
+				setInterval(getRTime,1000); 
+			</script> 
+           <p align="center">coming soon</p>
+	</div>
             
           <div class="content_box content_box_last">
             <div class="col_w600 float_l">
