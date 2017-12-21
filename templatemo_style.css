@@ -21,7 +21,10 @@ a:hover { color: #CC0066; text-decoration: none; }
 a.more { display: inline-block; padding-right: 20px; background:url(images/templatemo_more.png) center right no-repeat; font-weight: 700; text-decoration: none }
 
 p { margin: 0 0 10px 0; padding: 0; }
-img { border: none; }
+img {
+	border: none;
+	left: 200px;
+}
 blockquote { font-style: italic; margin: 0 0 0 10px;}
 cite { font-weight: bold; color:#769900; }
 cite a, cite a:link, cite a:visited  { font-weight: bold; color:#769900; }
