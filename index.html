@@ -108,58 +108,7 @@ ddsmoothmenu.init({
         
 	
 		<div class="content_box">          
-            <div align="center" id="CountMsg" class="HotDate"> 
-					<span id="t_d">00day</span> 
-					<span id="t_h">00hour</span> 
-					<span id="t_m">00min</span> 
-					<span id="t_s">00sec</span> 
-			</div> 
-			<script type="text/javascript"> 
-				function getRTime()
-				{ 
-					var EndTime= new Date('2017/12/25 00:00:00'); 
-					var NowTime = new Date(); 
-					var t =EndTime.getTime() - NowTime.getTime(); 
-
-					var d=Math.floor(t/1000/60/60/24); 
-					var h=Math.floor(t/1000/60/60%24); 
-					var m=Math.floor(t/1000/60%60); 
-					var s=Math.floor(t/1000%60); 
-	 
-					document.getElementById("t_d").innerHTML = d + "day"; 
-					document.getElementById("t_h").innerHTML = h + "hour"; 
-					document.getElementById("t_m").innerHTML = m + "min"; 
-					document.getElementById("t_s").innerHTML = s + "sec"; 
-				} 
-				setInterval(getRTime,1000); 
-			</script> 
-           <p align="center">coming soon</p>
-	</div>
             
-          <div class="content_box content_box_last">
-            <div class="col_w600 float_l">
-                
-                <h2>Welcome To Christmas Red</h2>
-          <div class="image_wrapper image_fl"><span></span>
-                	<img src="images/templatemo_image_01.png" alt="image" />
-				</div>
-              	<p><em>Lorem</em></p>
-                <p align="justify">for</p>	
-                
-            </div>
-            <div class="col_w300 float_r">
-            
-                <h3>Testimonial</h3>
-                <blockquote>
-                <p align="justify">Fusce</p>
-                <cite> <span>Web Developer</span></cite>
-                </blockquote>
-            
-            </div>  
-            <div class="cleaner"></div>   
-            </div>
-            
-        </div>
     
     </div> <!-- end of templatemo_wrapper -->
 </div> <!-- end of templatemo_outer_wrapper -->
