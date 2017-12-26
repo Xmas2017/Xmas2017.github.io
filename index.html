@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>XMAS~</title>
 <meta name="keywords" content="Christmas Red, css template, 5 pages, full-site template" />
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
@@ -25,7 +25,41 @@ ddsmoothmenu.init({
 })
 
 </script>
+<script>
+        function checkCookie() {
+            username = getCookie('username');
+            if(null!=username&&""!=username){
+                alert('Welcome agiin '+username+'!');
+            }else{
+                username = prompt('Please enter your name:',"");
+                if(username!=null&&username!=""){
+                    setCookie('username',username,365);
+                }
+            }
+        }
 
+        function getCookie(c_name) {
+            if(document.cookie.length>0){
+                c_start = document.cookie.indexOf(c_name + "=");
+                if(c_start!=-1){
+                    c_start = c_start + c_name.length+1;
+                    c_end = document.cookie.indexOf(";",c_start);
+                    if(c_end==-1){
+                        c_end=document.cookie.length;
+                        return unescape(document.cookie.substring(c_start,c_end));
+                    }
+                }
+            }
+        }
+
+        function setCookie(c_name, value, expiredays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate()+expiredays);
+            document.cookie=c_name+"="+escape(value)+
+                    ((expiredays==null) ? "":";expires="+exdate.toGMTString());
+        }
+
+</script>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script language="javascript" type="text/javascript" src="scripts/mootools-1.2.1-core.js"></script>
 <script language="javascript" type="text/javascript" src="scripts/mootools-1.2-more.js"></script>
@@ -49,7 +83,7 @@ ddsmoothmenu.init({
 </script>
     
 </head>
-<body id="home">
+<body id="home" onload="checkCookie()">
 <div id="templatemo_outer_wrapper">
 	<div id="templatemo_wrapper">
     
