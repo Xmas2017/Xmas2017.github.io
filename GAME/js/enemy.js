@@ -91,7 +91,7 @@ Enemy.prototype = {
 		
 		var _this = this;
 		
-		setTimeout(function(){_this.onend()},50);
+		setTimeout(function(){_this.onend()},200);
 	},
 	//外部接口，检测是否撞到飞机玩家
 	OnCheckCrash : function(){},
