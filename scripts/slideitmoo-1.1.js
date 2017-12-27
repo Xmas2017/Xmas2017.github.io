@@ -1,17 +1,4 @@
-/**
-	SlideItMoo v1.1 - Image slider
-	(c) 2007-2008 Constantin Boiangiu <http://www.php-help.ro>
-	MIT-style license.
-	
-	Changes from version 1.0
-	- added continuous navigation
-	- changed the navigation from Fx.Scroll to Fx.Morph
-	- added new parameters: itemsSelector: pass the CSS class for divs
-	- itemWidth: for elements with margin/padding pass their width including margin/padding
-	
-	Updates ( August 4'th 2009 )
-	- added new parameter 'elemsSlide'. When this is set to a value lower that the actual number of elements in HTML, it will slide at once that number of elements when navigation clicked. Default: null
-**/
+
 var SlideItMoo = new Class({
 	
 	Implements: [Options],
