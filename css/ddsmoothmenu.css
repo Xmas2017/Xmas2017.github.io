@@ -40,7 +40,7 @@ display: inline-block;
 .ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
 	position: relative;
 	color: #000;
-	background: url(../images/templatemo_mr.png) no-repeat top right;
+	background: url(../images/all_mr.png) no-repeat top right;
 }
 
 .ddsmoothmenu ul li a.selected span, .ddsmoothmenu ul li a:hover span {
@@ -49,7 +49,7 @@ display: inline-block;
 	height: 29px;
 	top: 0;
 	left: -8px;
-	background: url(../images/templatemo_ml.png) no-repeat;
+	background: url(../images/all_ml.png) no-repeat;
 }
 	
 /*1st sub level menu*/
