@@ -37,7 +37,11 @@ h2 { font-size: 28px; margin: 0 0 25px; padding: 5px 0; }
 h3 { font-size: 22px; margin: 0 0 20px; padding: 0; }
 h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
 h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
-h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+h6 {
+	font-size: 18px;
+	margin: 0 0 5px;
+	padding: 0;
+}
 
 .cleaner { clear: both }
 .h10 { height: 10px }
@@ -121,7 +125,10 @@ h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
 
 .content_box { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px dashed #ccc }
 .col_w600 { width: 600px }
-.col_w450 { width: 450px }
+.col_w450 {
+	width: 450px;
+	font-size: 16px;
+}
 .col_w300 { width: 300px }
 .col_allw300 { float: left; width: 300px; margin-right: 30px }
 .content_box_last { padding: 0; margin: 0; border: none }
